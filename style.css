@@ -1,0 +1,29 @@
+#controls {
+    float: left;
+    width: 20ex;
+}
+
+#container {
+    margin-left: 15px;
+    background: #ccc;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+span.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+}
+
+a.button {
+    text-decoration: none;
+    color: initial;
+    font-size: 67%;
+    font-family: "Geneva";
+    padding: 7px;
+}    
+
+button {
+    font-family: "Geneva";
+}

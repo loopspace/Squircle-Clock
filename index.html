@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Square-Circle Clock
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="main.js">
+    </script>
+  </head>
+  <body>
+    <div id="controls">
+      <span>Time on clock:</span>
+    <span id="dateandtime">
+    </span>
+    <br>
+    <span>Change time:</span>
+    <form id="form">
+      <table>
+	<tr>
+	  <td>
+	    Date:
+	  </td>
+	  <td>
+	    <input id="date" type="date">
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    Time:
+	  </td>
+	  <td>
+	    <input id="time" type="time">
+	  </td>
+	</tr>
+	<tr>
+	  <td></td>
+	  <td>
+	    <button id="clock" type="button">Current time</button>
+	  </td>
+	</tr>
+	<tr>
+	  <td colspan="2">
+	    <button id="hide" type="button">Hide construction</button>
+	  </td>
+	</tr>
+	<tr>
+	  <td colspan="2">
+	    <span class="button">
+	      <a id="download" class="button">Download as SVG</a>
+	    </span>
+	  </td>
+	</tr>
+      </table>
+    </form>
+    </div>
+    <div id="container">
+      <canvas id="canvas" width="500" height="500"></canvas>
+    </div>
+  </body>
+</html>
