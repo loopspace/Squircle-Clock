@@ -185,7 +185,6 @@ function renderClock(force) {
 
     var h = ctx.canvas.height;
     var w = ctx.canvas.width;
-    var r = Math.min(h,w)/30
 
     ctx.lineWidth = 2;
     ctx.strokeStyle = "gray";
@@ -289,7 +288,9 @@ function renderClock(force) {
 
 		ctx.restore();
 	    } else {
-		ctx.arc(0,0,Math.max(cplxLen(c[2-i]), cplxLen(c[4+i])),0,2*Math.PI);
+		var r = Math.max(cplxLen(c[2-i]), cplxLen(c[4+i]));
+		ctx.ellipse(0,0,r,r,0,0,2*Math.PI);
+		ctx.stroke();
 	    }
 	} else {
 	    var ra,rb,rc,rd, rpt;
