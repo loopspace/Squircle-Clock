@@ -338,9 +338,6 @@ function updateControls(d) {
     var min = d.getMinutes();
     var sec = d.getSeconds(); // We're generating the controls for the next time segment
     
-    // days of the year modulo 361
-    doy %= 361;
-
     // decaseconds
     sec = Math.floor(sec/10) + min*6;
 
